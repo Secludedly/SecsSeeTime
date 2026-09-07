@@ -774,52 +774,6 @@ For production distribution, the resulting published application can be wrapped 
 
 ---
 
-# Distribution
-
-The GitHub repository contains the source code for Sec's See Time.
-
-A production Windows release can be distributed as an installer such as:
-
-```text
-SecSeeTime-Setup-1.0.0.exe
-```
-
-A typical installer should install the application under:
-
-```text
-C:\Program Files\Sec's See Time\
-```
-
-and create Start Menu/Desktop shortcuts as desired.
-
----
-
-# Design Philosophy
-
-Sec's See Time was built around a few simple ideas:
-
-### The clock should feel like an application.
-
-A clock does not have to look like a calculator display floating in the corner of a desktop.
-
-### Alarms should be flexible.
-
-Different people wake up differently. Some want a gentle chime. Some need an air horn from the depths of hell.
-
-### Customization should go deeper than a color picker.
-
-Themes can affect typography, gradients, particles, glow, backgrounds, world clocks, and the alarm screen.
-
-### The application should stay useful in the background.
-
-The tray, startup integration, background alarm engine, and notifications allow the main window to disappear without turning the application off.
-
-### User audio should be first-class.
-
-If the built-in sounds aren't enough, bring your own audio or record something directly inside the application.
-
----
-
 # Screenshots & GIFs
 
 The following placeholders are intentionally left with empty image URLs so repository maintainers can add their own screenshots/GIFs later.
@@ -1002,14 +956,6 @@ Potential future improvements may include:
 
 ---
 
-# License
-
-No open-source license is currently specified in the project repository.
-
-If you intend to permit others to modify, redistribute, or reuse the project, add an appropriate `LICENSE` file to the repository and replace this section with the applicable license information.
-
----
-
 # Credits & Technologies
 
 Sec's See Time is built with open-source and Microsoft technologies including:
@@ -1023,14 +969,6 @@ Sec's See Time is built with open-source and Microsoft technologies including:
 - WebView2
 
 Please see the project's NuGet package references for the exact versions used by the current source release.
-
----
-
-# Repository
-
-**GitHub:**
-
-https://github.com/Secludedly/SecsSeeTime
 
 ---
 
