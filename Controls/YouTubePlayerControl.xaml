@@ -1,0 +1,42 @@
+<UserControl x:Class="SecSeeTime.Controls.YouTubePlayerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+             Background="#000000">
+
+    <Grid>
+
+        <wv2:WebView2 x:Name="Browser"
+                      DefaultBackgroundColor="#000000"/>
+
+        <!-- Shown until the embed reports ready, and again on failure. -->
+
+        <Border x:Name="StatusOverlay"
+                Background="#000000">
+
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+
+                <TextBlock x:Name="StatusIcon"
+                           Text="▶"
+                           FontSize="34"
+                           Foreground="#5A6478"
+                           HorizontalAlignment="Center"/>
+
+                <TextBlock x:Name="StatusText"
+                           Text="CONNECTING TO YOUTUBE…"
+                           FontSize="11"
+                           FontWeight="SemiBold"
+                           Foreground="#7B849A"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap"
+                           MaxWidth="420"
+                           Margin="0,14,0,0"/>
+
+            </StackPanel>
+
+        </Border>
+
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- Must stay in sync with <TargetFramework> in
+         Properties\PublishProfiles\FolderProfile.pubxml. A publish profile that
+         names a different TFM makes restore rewrite obj\project.assets.json for
+         that TFM, and the normal build then fails with NETSDK1005 (which in turn
+         shows up as XDG0008 "name does not exist in namespace" in the XAML
+         designer). No code here uses WinRT, so no platform version is needed. -->
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- WinForms assemblies for the tray NotifyIcon, pulled in as a framework
+         reference rather than via <UseWindowsForms>true</UseWindowsForms>.
+         UseWindowsForms would add System.Windows.Forms and System.Drawing to the
+         implicit global usings, which collides with this WPF project's
+         Application, Button, Color, Brush, MessageBox, etc. A FrameworkReference
+         gives us the assemblies without touching the global usings.
+         Note: a plain <Reference Include="System.Windows.Forms" /> does NOT work
+         in SDK-style projects - there is no such assembly to resolve on disk. -->
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App.WindowsForms" />
+
+    <PackageReference Include="LibVLCSharp.WPF" Version="3.10.1" />
+
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.23.1" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4191.47" />
+    <!-- Do NOT add Microsoft.WindowsAppSDK here. WebView2's own build targets
+         switch to the WinUI/CsWinRT projection when MicrosoftWindowsAppSDKPackageDir
+         is set, which drops Microsoft.Web.WebView2.Wpf.dll from the reference set
+         and breaks <wv2:WebView2 /> in YouTubePlayerControl.xaml (MC3074). -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\icon.ico" />
+    <Resource Include="Assets\Images\SST_ProgIcon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\Fonts\" />
+    <Folder Include="Assets\Sounds\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,990 @@
+<Window x:Class="SecSeeTime.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:SecSeeTime.Controls"
+        mc:Ignorable="d"
+        Title="Sec's See Time"
+        Icon="/Assets/icon.ico"
+        Width="1200"
+        Height="760"
+        MinWidth="900"
+        MinHeight="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="CanResize"
+        ShowInTaskbar="True">
+
+    <Window.Resources>
+
+        <!-- ========================================================= -->
+        <!-- WINDOW SHADOW                                              -->
+        <!-- ========================================================= -->
+
+        <DropShadowEffect x:Key="WindowShadow"
+                          BlurRadius="35"
+                          ShadowDepth="0"
+                          Opacity="0.55"/>
+
+
+        <!-- ========================================================= -->
+        <!-- NAVIGATION BUTTON STYLE                                    -->
+        <!-- ========================================================= -->
+
+        <Style x:Key="NavigationButton"
+               TargetType="Button">
+
+            <Setter Property="Background"
+                    Value="Transparent"/>
+
+            <Setter Property="Foreground"
+                    Value="{DynamicResource ThemeTextSecondary}"/>
+
+            <Setter Property="BorderThickness"
+                    Value="0"/>
+
+            <Setter Property="Padding"
+                    Value="18,12"/>
+
+            <Setter Property="Margin"
+                    Value="5,0"/>
+
+            <Setter Property="Cursor"
+                    Value="Hand"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="NavBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="12"
+                                Padding="{TemplateBinding Padding}">
+
+                            <ContentPresenter
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter TargetName="NavBorder"
+                                        Property="Background"
+                                        Value="#1D2333"/>
+
+                                <Setter Property="Foreground"
+                                        Value="{DynamicResource ThemeTextPrimary}"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsPressed"
+                                     Value="True">
+
+                                <Setter TargetName="NavBorder"
+                                        Property="Background"
+                                        Value="#292F42"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+
+        <!-- ========================================================= -->
+        <!-- TITLE BAR BUTTON                                           -->
+        <!-- ========================================================= -->
+
+        <Style x:Key="TitleBarButton"
+               TargetType="Button">
+
+            <Setter Property="Width"
+                    Value="42"/>
+
+            <Setter Property="Height"
+                    Value="32"/>
+
+            <Setter Property="Background"
+                    Value="Transparent"/>
+
+            <Setter Property="Foreground"
+                    Value="{DynamicResource ThemeTextSecondary}"/>
+
+            <Setter Property="BorderThickness"
+                    Value="0"/>
+
+            <Setter Property="Cursor"
+                    Value="Hand"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="TitleBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="8">
+
+                            <ContentPresenter
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter TargetName="TitleBorder"
+                                        Property="Background"
+                                        Value="#202638"/>
+
+                                <Setter Property="Foreground"
+                                        Value="{DynamicResource ThemeTextPrimary}"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+
+        <!-- ========================================================= -->
+        <!-- LARGE FEATURE BUTTON                                       -->
+        <!-- ========================================================= -->
+
+        <Style x:Key="FeatureButton"
+               TargetType="Button">
+
+            <Setter Property="Background"
+                    Value="#121827"/>
+
+            <Setter Property="Foreground"
+                    Value="{DynamicResource ThemeTextPrimary}"/>
+
+            <Setter Property="BorderBrush"
+                    Value="#293147"/>
+
+            <Setter Property="BorderThickness"
+                    Value="1"/>
+
+            <Setter Property="Cursor"
+                    Value="Hand"/>
+
+            <Setter Property="Padding"
+                    Value="22"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="FeatureBorder"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="18"
+                                Padding="{TemplateBinding Padding}">
+
+                            <ContentPresenter
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter TargetName="FeatureBorder"
+                                        Property="Background"
+                                        Value="#1A2030"/>
+
+                                <Setter TargetName="FeatureBorder"
+                                        Property="BorderBrush"
+                                        Value="#504A86"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsPressed"
+                                     Value="True">
+
+                                <Setter TargetName="FeatureBorder"
+                                        Property="Background"
+                                        Value="#252B40"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+
+        <!-- ========================================================= -->
+        <!-- STATUS BAR ACTION                                          -->
+        <!-- ========================================================= -->
+
+        <Style x:Key="StatusActionButton"
+               TargetType="Button">
+
+            <Setter Property="Background" Value="#2A1220"/>
+            <Setter Property="Foreground" Value="{DynamicResource ThemeDanger}"/>
+            <Setter Property="FontSize" Value="9"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#6A2438"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="ActionBorder"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="9"
+                                Padding="11,5">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="ActionBorder"
+                                        Property="Background"
+                                        Value="#3C1A2C"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+
+    </Window.Resources>
+
+
+    <!-- ============================================================= -->
+    <!-- OUTER WINDOW                                                  -->
+    <!-- ============================================================= -->
+
+    <Border x:Name="MainBorder"
+            Margin="12"
+            Background="{DynamicResource ThemeWindowBackground}"
+            CornerRadius="24"
+            BorderBrush="{DynamicResource ThemePanelBorder}"
+            BorderThickness="1"
+            Effect="{StaticResource WindowShadow}"
+            ClipToBounds="True">
+
+        <Grid>
+
+
+            <!-- ===================================================== -->
+            <!-- ANIMATED BACKGROUND                                    -->
+            <!-- ===================================================== -->
+
+            <Grid x:Name="BackgroundLayer">
+
+                <Image x:Name="BackgroundImageLayer"
+                       Stretch="UniformToFill"
+                       Opacity="0"
+                       IsHitTestVisible="False"/>
+
+                <Rectangle x:Name="BackgroundOverlayLayer"
+                           Fill="Black"
+                           Opacity="0"
+                           IsHitTestVisible="False"/>
+
+                <!-- Large atmospheric glows -->
+
+                <Ellipse x:Name="GlowTopRight"
+                         Width="600"
+                         Height="600"
+                         HorizontalAlignment="Right"
+                         VerticalAlignment="Top"
+                         Margin="0,-300,-150,0"
+                         Opacity="0.10"/>
+
+
+                <Ellipse x:Name="GlowBottomLeft"
+                         Width="500"
+                         Height="500"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Bottom"
+                         Margin="-220,0,0,-260"
+                         Opacity="0.08"/>
+
+
+                <!-- Particle canvas -->
+
+                <Canvas x:Name="ParticleCanvas"
+                        IsHitTestVisible="False"/>
+
+                <Rectangle x:Name="NoiseLayer"
+                           IsHitTestVisible="False"
+                           Opacity="0">
+                    <Rectangle.Fill>
+                        <DrawingBrush TileMode="Tile" Viewport="0,0,18,18" ViewportUnits="Absolute">
+                            <DrawingBrush.Drawing>
+                                <DrawingGroup>
+                                    <GeometryDrawing Brush="#44000000" Geometry="M 2,3 L 3,3 L 3,4 L 2,4 Z M 11,8 L 12,8 L 12,9 L 11,9 Z M 6,15 L 7,15 L 7,16 L 6,16 Z M 15,2 L 16,2 L 16,3 L 15,3 Z"/>
+                                </DrawingGroup>
+                            </DrawingBrush.Drawing>
+                        </DrawingBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <Rectangle x:Name="ScanlineLayer"
+                           IsHitTestVisible="False"
+                           Opacity="0">
+                    <Rectangle.Fill>
+                        <DrawingBrush TileMode="Tile" Viewport="0,0,1,4" ViewportUnits="Absolute" Stretch="None">
+                            <DrawingBrush.Drawing>
+                                <DrawingGroup>
+                                    <GeometryDrawing Brush="#22000000" Geometry="M 0,0 L 100,0 L 100,1 L 0,1 Z"/>
+                                </DrawingGroup>
+                            </DrawingBrush.Drawing>
+                        </DrawingBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+            </Grid>
+
+
+            <!-- ===================================================== -->
+            <!-- MAIN CONTENT                                           -->
+            <!-- ===================================================== -->
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="58"/>
+
+                    <RowDefinition Height="*"/>
+
+                    <RowDefinition Height="54"/>
+
+                </Grid.RowDefinitions>
+
+
+                <!-- ================================================= -->
+                <!-- TITLE BAR                                         -->
+                <!-- ================================================= -->
+
+                <Border Grid.Row="0"
+                        Background="#0C0F18"
+                        BorderBrush="#1F2533"
+                        BorderThickness="0,0,0,1"
+                        MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="*"/>
+
+                            <ColumnDefinition Width="Auto"/>
+
+                        </Grid.ColumnDefinitions>
+
+
+                        <!-- Brand -->
+
+                        <StackPanel Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    Margin="20,0,0,0">
+
+                            <!-- The app mark. UniformToFill inside a
+                                 rounded Border crops the artwork to the
+                                 badge instead of squashing it. -->
+
+                            <Border Width="30"
+                                    Height="30"
+                                    CornerRadius="9"
+                                    ClipToBounds="True">
+
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/Assets/Images/SST_ProgIcon.png"
+                                                Stretch="UniformToFill"/>
+                                </Border.Background>
+
+                            </Border>
+
+
+                            <StackPanel Margin="11,0,0,0">
+
+                                <TextBlock Text="SEC'S SEE TIME"
+                                           Foreground="{DynamicResource ThemeTextPrimary}"
+                                           FontSize="14"
+                                           FontWeight="SemiBold"/>
+
+                                <TextBlock Text="THE WINDOWS MASTER CLOCK"
+                                           Foreground="{DynamicResource ThemeTextMuted}"
+                                           FontSize="8"
+                                           FontWeight="SemiBold"
+                                           Margin="0,1,0,0"/>
+
+                            </StackPanel>
+
+                        </StackPanel>
+
+
+                        <!-- Window controls -->
+
+                        <StackPanel Grid.Column="1"
+                                    Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    Margin="0,0,12,0">
+
+                            <Button Style="{StaticResource TitleBarButton}"
+                                    Click="MinimizeButton_Click"
+                                    ToolTip="Minimize">
+
+                                <TextBlock Text="—"
+                                           FontSize="15"
+                                           VerticalAlignment="Center"/>
+
+                            </Button>
+
+
+                            <Button Style="{StaticResource TitleBarButton}"
+                                    Click="MaximizeButton_Click"
+                                    ToolTip="Maximize / Restore">
+
+                                <TextBlock x:Name="MaximizeIcon"
+                                           Text="□"
+                                           FontSize="13"
+                                           VerticalAlignment="Center"/>
+
+                            </Button>
+
+
+                            <Button Style="{StaticResource TitleBarButton}"
+                                    Click="CloseButton_Click"
+                                    ToolTip="Close">
+
+                                <TextBlock Text="×"
+                                           FontSize="20"
+                                           VerticalAlignment="Center"/>
+
+                            </Button>
+
+                        </StackPanel>
+
+                    </Grid>
+
+                </Border>
+
+
+                <!-- ================================================= -->
+                <!-- CONTENT                                            -->
+                <!-- ================================================= -->
+
+                <Grid Grid.Row="1">
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="*"/>
+
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+
+
+                    <!-- ============================================= -->
+                    <!-- CLOCK                                           -->
+                    <!-- ============================================= -->
+
+                    <Grid Grid.Row="0">
+
+                        <Grid.ColumnDefinitions>
+
+                            <!-- The clock stays centered in whatever space
+                                 the world clock rail leaves behind. -->
+
+                            <ColumnDefinition x:Name="ClockColumn" Width="*"/>
+
+                            <ColumnDefinition x:Name="RailColumn" Width="Auto"/>
+
+                        </Grid.ColumnDefinitions>
+
+
+                    <StackPanel x:Name="ClockStack"
+                                Grid.Column="0"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center">
+
+
+                        <TextBlock Text="CURRENT TIME"
+                                   HorizontalAlignment="Center"
+                                   Foreground="{DynamicResource ThemeTextMuted}"
+                                   FontSize="11"
+                                   FontWeight="SemiBold"
+                                   Margin="0,0,0,15"/>
+
+
+                        <!-- Giant Clock -->
+
+                        <controls:LetterSpacedTextBlock x:Name="ClockText"
+                                   Text="00:00:00"
+                                   HorizontalAlignment="Center"
+                                   Foreground="{DynamicResource ThemeTextPrimary}"
+                                   FontFamily="{DynamicResource ThemeClockFontFamily}"
+                                   FontSize="{DynamicResource ThemeClockFontSize}"
+                                   FontWeight="Bold"
+                                   LetterSpacing="0"
+                                   OutlineEnabled="False"
+                                   OutlineThickness="1"/>
+
+
+                        <!-- Date -->
+
+                        <TextBlock x:Name="DateText"
+                                   Text="Monday, January 1, 2026"
+                                   HorizontalAlignment="Center"
+                                   Foreground="{DynamicResource ThemeTextSecondary}"
+                                   FontSize="17"
+                                   FontWeight="Medium"
+                                   Margin="0,14,0,0"/>
+
+
+                        <!-- Location / timezone -->
+
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Center"
+                                    Margin="0,7,0,0">
+
+                            <TextBlock Text="●"
+                                       Foreground="{DynamicResource ThemeSuccess}"
+                                       FontSize="10"
+                                       VerticalAlignment="Center"
+                                       Margin="0,0,7,0"/>
+
+                            <TextBlock x:Name="TimeZoneText"
+                                       Text="NEW YORK • EASTERN TIME"
+                                       Foreground="{DynamicResource ThemeTextMuted}"
+                                       FontSize="10"
+                                       FontWeight="SemiBold"/>
+
+                        </StackPanel>
+
+
+                        <!-- Alarm engine status -->
+
+                        <Border x:Name="EngineStatusPill"
+                                Margin="0,24,0,0"
+                                Padding="15,8"
+                                CornerRadius="16"
+                                Background="#101522"
+                                BorderBrush="#222A3B"
+                                BorderThickness="1"
+                                HorizontalAlignment="Center">
+
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock x:Name="EngineStatusDot"
+                                           Text="●"
+                                           Foreground="{DynamicResource ThemeSuccess}"
+                                           FontSize="8"
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,8,0"/>
+
+                                <TextBlock x:Name="EngineStatusText"
+                                           Text="CLOCK RUNNING"
+                                           Foreground="{DynamicResource ThemeTextSecondary}"
+                                           FontSize="9"
+                                           FontWeight="SemiBold"
+                                           VerticalAlignment="Center"/>
+
+                                <Button x:Name="EngineStopButton"
+                                        Style="{StaticResource StatusActionButton}"
+                                        Content="STOP"
+                                        Margin="12,0,0,0"
+                                        Visibility="Collapsed"
+                                        Click="EngineStopButton_Click"/>
+
+                            </StackPanel>
+
+                        </Border>
+
+                    </StackPanel>
+
+
+                    <!-- ============================================= -->
+                    <!-- WORLD CLOCK RAIL                                -->
+                    <!--                                                 -->
+                    <!-- Collapsed while the user has no saved cities,   -->
+                    <!-- so the main clock centers exactly as before.    -->
+                    <!-- ============================================= -->
+
+                    <Border x:Name="WorldClockRail"
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            Margin="0,0,28,0"
+                            Padding="14,12"
+                            MaxHeight="430"
+                            CornerRadius="16"
+                            Background="{DynamicResource ThemePanelBackground}"
+                            BorderBrush="{DynamicResource ThemePanelBorder}"
+                            BorderThickness="1"
+                            Visibility="Collapsed">
+
+                        <StackPanel>
+
+                            <TextBlock Text="WORLD CLOCKS"
+                                       Foreground="{DynamicResource ThemeTextMuted}"
+                                       FontSize="9"
+                                       FontWeight="Bold"
+                                       Margin="4,0,0,10"/>
+
+                            <ScrollViewer VerticalScrollBarVisibility="Auto"
+                                          HorizontalScrollBarVisibility="Disabled">
+
+                                <ItemsControl x:Name="WorldClockStrip">
+
+                                    <ItemsControl.ItemTemplate>
+
+                                        <DataTemplate>
+
+                                            <Border Margin="0,0,0,7"
+                                                    Padding="12,9"
+                                                    MinWidth="190"
+                                                    CornerRadius="12"
+                                                    Background="{DynamicResource ThemePanelBackgroundLight}"
+                                                    BorderBrush="{DynamicResource ThemePanelBorder}"
+                                                    BorderThickness="1">
+
+                                                <StackPanel>
+
+                                                    <TextBlock Text="{Binding DisplayName}"
+                                                               Foreground="{DynamicResource ThemeTextSecondary}"
+                                                               FontSize="10"
+                                                               FontWeight="SemiBold"
+                                                               TextTrimming="CharacterEllipsis"/>
+
+                                                    <TextBlock Text="{Binding TimeText}"
+                                                               Foreground="{DynamicResource ThemeAccentLight}"
+                                                               FontFamily="{DynamicResource ThemeWorldClockFontFamily}"
+                                                               FontSize="{DynamicResource ThemeWorldClockFontSize}"
+                                                               FontWeight="Bold"
+                                                               Margin="0,3,0,0"/>
+
+                                                    <TextBlock Text="{Binding DateText}"
+                                                               Visibility="{DynamicResource ThemeWorldClockDateVisibility}"
+                                                               Foreground="{DynamicResource ThemeTextMuted}"
+                                                               FontSize="9"
+                                                               Margin="0,3,0,0"/>
+
+                                                    <TextBlock Text="{Binding MetaText}"
+                                                               Visibility="{DynamicResource ThemeWorldClockZoneVisibility}"
+                                                               Foreground="{DynamicResource ThemeTextMuted}"
+                                                               FontSize="8"
+                                                               Margin="0,3,0,0"/>
+
+                                                </StackPanel>
+
+                                            </Border>
+
+                                        </DataTemplate>
+
+                                    </ItemsControl.ItemTemplate>
+
+                                </ItemsControl>
+
+                            </ScrollViewer>
+
+                        </StackPanel>
+
+                    </Border>
+
+                    </Grid>
+
+
+                    <!-- ============================================= -->
+                    <!-- FEATURE BUTTONS                                 -->
+                    <!-- ============================================= -->
+
+                    <Grid Grid.Row="1"
+                          Margin="55,0,55,25">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="*"/>
+
+                            <ColumnDefinition Width="*"/>
+
+                            <ColumnDefinition Width="*"/>
+
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+
+                        <!-- Alarms -->
+
+                        <Button Grid.Column="0"
+                                Style="{StaticResource FeatureButton}"
+                                Click="AlarmsButton_Click"
+                                Margin="6">
+
+                            <StackPanel>
+
+                                <TextBlock Text="🔔"
+                                           FontSize="27"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,0,0,9"/>
+
+                                <TextBlock Text="ALARMS"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock x:Name="AlarmCountText"
+                                           Text="0 ACTIVE"
+                                           HorizontalAlignment="Center"
+                                           Foreground="{DynamicResource ThemeTextMuted}"
+                                           FontSize="9"
+                                           Margin="0,4,0,0"/>
+
+                            </StackPanel>
+
+                        </Button>
+
+
+                        <!-- World Clock -->
+
+                        <Button Grid.Column="1"
+                                Style="{StaticResource FeatureButton}"
+                                Click="WorldClockButton_Click"
+                                Margin="6">
+
+                            <StackPanel>
+
+                                <TextBlock Text="🌎"
+                                           FontSize="27"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,0,0,9"/>
+
+                                <TextBlock Text="WORLD CLOCK"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock Text="TIME ZONES"
+                                           HorizontalAlignment="Center"
+                                           Foreground="{DynamicResource ThemeTextMuted}"
+                                           FontSize="9"
+                                           Margin="0,4,0,0"/>
+
+                            </StackPanel>
+
+                        </Button>
+
+
+                        <!-- Themes -->
+
+                        <Button Grid.Column="2"
+                                Style="{StaticResource FeatureButton}"
+                                Click="ThemesButton_Click"
+                                Margin="6">
+
+                            <StackPanel>
+
+                                <TextBlock Text="✦"
+                                           FontSize="29"
+                                           HorizontalAlignment="Center"
+                                           Foreground="{DynamicResource ThemeAccentLight}"
+                                           Margin="0,0,0,7"/>
+
+                                <TextBlock Text="THEMES"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock x:Name="ThemeNameText"
+                                           Text="MIDNIGHT"
+                                           HorizontalAlignment="Center"
+                                           Foreground="{DynamicResource ThemeTextMuted}"
+                                           FontSize="9"
+                                           Margin="0,4,0,0"/>
+
+                            </StackPanel>
+
+                        </Button>
+
+
+                        <!-- Settings -->
+
+                        <Button Grid.Column="3"
+                                Style="{StaticResource FeatureButton}"
+                                Click="SettingsButton_Click"
+                                Margin="6">
+
+                            <StackPanel>
+
+                                <TextBlock Text="⚙"
+                                           FontSize="27"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,0,0,9"/>
+
+                                <TextBlock Text="SETTINGS"
+                                           HorizontalAlignment="Center"
+                                           FontSize="12"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock Text="PREFERENCES"
+                                           HorizontalAlignment="Center"
+                                           Foreground="{DynamicResource ThemeTextMuted}"
+                                           FontSize="9"
+                                           Margin="0,4,0,0"/>
+
+                            </StackPanel>
+
+                        </Button>
+
+                    </Grid>
+
+                </Grid>
+
+
+                <!-- ================================================= -->
+                <!-- STATUS BAR                                        -->
+                <!-- ================================================= -->
+
+                <Border Grid.Row="2"
+                        Background="#0C0F18"
+                        BorderBrush="#1F2533"
+                        BorderThickness="0,1,0,0">
+
+                    <Grid Margin="22,0">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="*"/>
+
+                            <ColumnDefinition Width="Auto"/>
+
+                            <ColumnDefinition Width="Auto"/>
+
+                            <ColumnDefinition Width="Auto"/>
+
+                        </Grid.ColumnDefinitions>
+
+
+                        <!-- Next alarm -->
+
+                        <StackPanel Orientation="Horizontal"
+                                    VerticalAlignment="Center">
+
+                            <TextBlock x:Name="NextAlarmDot"
+                                       Text="●"
+                                       Foreground="{DynamicResource ThemeSuccess}"
+                                       FontSize="8"
+                                       VerticalAlignment="Center"
+                                       Margin="0,0,6,0"/>
+
+                            <TextBlock x:Name="NextAlarmText"
+                                       Text="NO ALARMS SCHEDULED"
+                                       Foreground="{DynamicResource ThemeTextMuted}"
+                                       FontSize="9"
+                                       FontWeight="SemiBold"/>
+
+                        </StackPanel>
+
+
+                        <!-- Alarm count -->
+
+                        <StackPanel Grid.Column="1"
+                                    Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    Margin="25,0,0,0">
+
+                            <TextBlock Text="🔔"
+                                       FontSize="11"
+                                       Margin="0,0,6,0"/>
+
+                            <TextBlock x:Name="StatusAlarmText"
+                                       Text="0 ALARMS"
+                                       Foreground="{DynamicResource ThemeTextMuted}"
+                                       FontSize="9"
+                                       FontWeight="SemiBold"/>
+
+                        </StackPanel>
+
+
+                        <!-- Internet -->
+
+                        <StackPanel Grid.Column="2"
+                                    Orientation="Horizontal"
+                                    VerticalAlignment="Center"
+                                    Margin="25,0,0,0">
+
+                            <TextBlock x:Name="InternetIndicator"
+                                       Text="●"
+                                       Foreground="{DynamicResource ThemeSuccess}"
+                                       FontSize="8"
+                                       VerticalAlignment="Center"
+                                       Margin="0,0,6,0"/>
+
+                            <TextBlock x:Name="InternetStatusText"
+                                       Text="ONLINE"
+                                       Foreground="{DynamicResource ThemeTextMuted}"
+                                       FontSize="9"
+                                       FontWeight="SemiBold"/>
+
+                        </StackPanel>
+
+
+                        <!-- Version -->
+
+                        <TextBlock Grid.Column="3"
+                                   Text="SEC'S SEE TIME • v0.8.0"
+                                   Foreground="{DynamicResource ThemeTextMuted}"
+                                   FontSize="9"
+                                   FontWeight="SemiBold"
+                                   VerticalAlignment="Center"
+                                   Margin="25,0,0,0"/>
+
+                    </Grid>
+
+                </Border>
+
+            </Grid>
+
+        </Grid>
+
+    </Border>
+
+</Window>

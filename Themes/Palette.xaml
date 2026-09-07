@@ -1,0 +1,68 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+
+    <!--
+        The live theme palette.
+
+        Every value here is a design-time default. At runtime ThemeService
+        replaces these entries on Application.Resources, which shadows this
+        dictionary, so any surface that binds with DynamicResource restyles
+        itself the moment a theme is applied.
+    -->
+
+
+    <!-- ============================================================= -->
+    <!-- SURFACES                                                       -->
+    <!-- ============================================================= -->
+
+    <SolidColorBrush x:Key="ThemeWindowBackground" Color="#090B12"/>
+    <SolidColorBrush x:Key="ThemePanelBackground" Color="#121622"/>
+    <SolidColorBrush x:Key="ThemePanelBackgroundLight" Color="#181D2B"/>
+    <SolidColorBrush x:Key="ThemePanelBorder" Color="#2A3144"/>
+
+
+    <!-- ============================================================= -->
+    <!-- TEXT                                                           -->
+    <!-- ============================================================= -->
+
+    <SolidColorBrush x:Key="ThemeTextPrimary" Color="#F4F7FF"/>
+    <SolidColorBrush x:Key="ThemeTextSecondary" Color="#9CA6BA"/>
+    <SolidColorBrush x:Key="ThemeTextMuted" Color="#697388"/>
+
+
+    <!-- ============================================================= -->
+    <!-- ACCENTS                                                        -->
+    <!-- ============================================================= -->
+
+    <SolidColorBrush x:Key="ThemeAccent" Color="#8B7CFF"/>
+    <SolidColorBrush x:Key="ThemeAccentLight" Color="#B1A8FF"/>
+    <SolidColorBrush x:Key="ThemeSuccess" Color="#55D6A7"/>
+    <SolidColorBrush x:Key="ThemeDanger" Color="#FF6685"/>
+
+    <SolidColorBrush x:Key="ThemePlayingAccent" Color="#FF8FE7"/>
+    <SolidColorBrush x:Key="ThemeSilenceAccent" Color="#8FD9FF"/>
+
+
+    <!-- ============================================================= -->
+    <!-- CLOCK TYPOGRAPHY                                               -->
+    <!-- ============================================================= -->
+
+    <FontFamily x:Key="ThemeClockFontFamily">Consolas</FontFamily>
+
+    <sys:Double x:Key="ThemeClockFontSize">104</sys:Double>
+
+
+    <!-- ============================================================= -->
+    <!-- WORLD CLOCK RAIL                                               -->
+    <!-- ============================================================= -->
+
+    <FontFamily x:Key="ThemeWorldClockFontFamily">Consolas</FontFamily>
+
+    <sys:Double x:Key="ThemeWorldClockFontSize">21</sys:Double>
+
+    <Visibility x:Key="ThemeWorldClockDateVisibility">Visible</Visibility>
+
+    <Visibility x:Key="ThemeWorldClockZoneVisibility">Collapsed</Visibility>
+
+</ResourceDictionary>

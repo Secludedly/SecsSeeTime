@@ -1,0 +1,488 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\services\\youtubeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:services\\youtubeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\themes\\themepresets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:themes\\themepresets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\models\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:models\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\helpers\\windowhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:helpers\\windowhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\helpers\\timehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:helpers\\timehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\enums\\timeformatmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:enums\\timeformatmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\enums\\alarmsoundtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:enums\\alarmsoundtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\enums\\alarmrepeatmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:enums\\alarmrepeatmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\controls\\youtubeplayercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:controls\\youtubeplayercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\controls\\youtubeplayercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:controls\\youtubeplayercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\views\\worldclockwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:views\\worldclockwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsappsdk.base\\2.0.4\\buildTransitive\\Microsoft.WindowsAppSDK.Base.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\services\\themepersistenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:services\\themepersistenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\views\\appearancestudiowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:views\\appearancestudiowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\services\\alarmplaybackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:services\\alarmplaybackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\services\\timeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:services\\timeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\models\\alarmtheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:models\\alarmtheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\views\\alarmwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:views\\alarmwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:services\\audioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\models\\alarmsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:models\\alarmsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\views\\alarmmanagerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:views\\alarmmanagerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\views\\alarmmanagerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:views\\alarmmanagerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\services\\alarmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:services\\alarmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\models\\alarmtriggeredeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:models\\alarmtriggeredeventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|c:\\users\\admin\\source\\repos\\secseetime\\secseetime.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{912164F3-5BB6-8F7B-9E76-2BF5E6CE843E}|SecSeeTime.csproj|solutionrelative:secseetime.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThemePresets.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Themes\\ThemePresets.cs",
+              "RelativeDocumentMoniker": "Themes\\ThemePresets.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Themes\\ThemePresets.cs",
+              "RelativeToolTip": "Themes\\ThemePresets.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAwwAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T01:22:49.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TimeFormatMode.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Enums\\TimeFormatMode.cs",
+              "RelativeDocumentMoniker": "Enums\\TimeFormatMode.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Enums\\TimeFormatMode.cs",
+              "RelativeToolTip": "Enums\\TimeFormatMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T01:11:50.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "YouTubePlayerControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Controls\\YouTubePlayerControl.xaml.cs",
+              "RelativeDocumentMoniker": "Controls\\YouTubePlayerControl.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Controls\\YouTubePlayerControl.xaml.cs",
+              "RelativeToolTip": "Controls\\YouTubePlayerControl.xaml.cs",
+              "ViewState": "AgIAAK8BAAAAAAAAAAAgwHcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T01:08:03.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WorldClockWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\WorldClockWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\WorldClockWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\WorldClockWindow.xaml.cs",
+              "RelativeToolTip": "Views\\WorldClockWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T21:09:57.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "YouTubePlayerControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Controls\\YouTubePlayerControl.xaml",
+              "RelativeDocumentMoniker": "Controls\\YouTubePlayerControl.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Controls\\YouTubePlayerControl.xaml",
+              "RelativeToolTip": "Controls\\YouTubePlayerControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-04T07:08:58.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AlarmPlaybackService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\AlarmPlaybackService.cs",
+              "RelativeDocumentMoniker": "Services\\AlarmPlaybackService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\AlarmPlaybackService.cs",
+              "RelativeToolTip": "Services\\AlarmPlaybackService.cs",
+              "ViewState": "AgIAAPUCAAAAAAAAAAAmwAoDAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T06:34:57.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AudioService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\AudioService.cs",
+              "RelativeDocumentMoniker": "Services\\AudioService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\AudioService.cs",
+              "RelativeToolTip": "Services\\AudioService.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAmwLgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T06:35:39.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WindowHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Helpers\\WindowHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\WindowHelper.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Helpers\\WindowHelper.cs",
+              "RelativeToolTip": "Helpers\\WindowHelper.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAswA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:40:57.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TimeHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Helpers\\TimeHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\TimeHelper.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Helpers\\TimeHelper.cs",
+              "RelativeToolTip": "Helpers\\TimeHelper.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAADwvxQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:40:50.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AlarmWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\AlarmWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\AlarmWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\AlarmWindow.xaml",
+              "RelativeToolTip": "Views\\AlarmWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-03T19:40:06.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Alarm.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Models\\Alarm.cs",
+              "RelativeDocumentMoniker": "Models\\Alarm.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Models\\Alarm.cs",
+              "RelativeToolTip": "Models\\Alarm.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAowAkBAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T06:12:38.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T03:33:14.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAEAEAAAAAAAAAAAgwN4CAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T21:52:15.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "YouTubeService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\YouTubeService.cs",
+              "RelativeDocumentMoniker": "Services\\YouTubeService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\YouTubeService.cs",
+              "RelativeToolTip": "Services\\YouTubeService.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:37:33.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppearanceStudioWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\AppearanceStudioWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AppearanceStudioWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\AppearanceStudioWindow.xaml.cs",
+              "RelativeToolTip": "Views\\AppearanceStudioWindow.xaml.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAArwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T21:11:43.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ThemePersistenceService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\ThemePersistenceService.cs",
+              "RelativeDocumentMoniker": "Services\\ThemePersistenceService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\ThemePersistenceService.cs",
+              "RelativeToolTip": "Services\\ThemePersistenceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T21:11:06.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-31T21:52:17.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AlarmRepeatMode.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Enums\\AlarmRepeatMode.cs",
+              "RelativeDocumentMoniker": "Enums\\AlarmRepeatMode.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Enums\\AlarmRepeatMode.cs",
+              "RelativeToolTip": "Enums\\AlarmRepeatMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T06:11:41.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AlarmSoundType.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Enums\\AlarmSoundType.cs",
+              "RelativeDocumentMoniker": "Enums\\AlarmSoundType.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Enums\\AlarmSoundType.cs",
+              "RelativeToolTip": "Enums\\AlarmSoundType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T06:12:08.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Microsoft.WindowsAppSDK.Base.targets",
+              "DocumentMoniker": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsappsdk.base\\2.0.4\\buildTransitive\\Microsoft.WindowsAppSDK.Base.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk.base\\2.0.4\\buildTransitive\\Microsoft.WindowsAppSDK.Base.targets",
+              "ToolTip": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsappsdk.base\\2.0.4\\buildTransitive\\Microsoft.WindowsAppSDK.Base.targets",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk.base\\2.0.4\\buildTransitive\\Microsoft.WindowsAppSDK.Base.targets",
+              "ViewState": "AgIAACsAAAAAAAAAAAAjwDwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-09-05T22:24:26.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TimeService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\TimeService.cs",
+              "RelativeDocumentMoniker": "Services\\TimeService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\TimeService.cs",
+              "RelativeToolTip": "Services\\TimeService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:37:41.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AlarmTheme.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Models\\AlarmTheme.cs",
+              "RelativeDocumentMoniker": "Models\\AlarmTheme.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Models\\AlarmTheme.cs",
+              "RelativeToolTip": "Models\\AlarmTheme.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:37:03.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AlarmSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Models\\AlarmSettings.cs",
+              "RelativeDocumentMoniker": "Models\\AlarmSettings.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Models\\AlarmSettings.cs",
+              "RelativeToolTip": "Models\\AlarmSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T19:36:55.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AlarmManagerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\AlarmManagerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AlarmManagerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\AlarmManagerWindow.xaml.cs",
+              "RelativeToolTip": "Views\\AlarmManagerWindow.xaml.cs",
+              "ViewState": "AgIAAKcEAAAAAAAAAAAwwNIEAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T06:22:37.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AlarmManagerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\AlarmManagerWindow.xaml",
+              "RelativeDocumentMoniker": "Views\\AlarmManagerWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Views\\AlarmManagerWindow.xaml",
+              "RelativeToolTip": "Views\\AlarmManagerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-01T06:21:52.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AlarmService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\AlarmService.cs",
+              "RelativeDocumentMoniker": "Services\\AlarmService.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Services\\AlarmService.cs",
+              "RelativeToolTip": "Services\\AlarmService.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAmwAQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T06:13:48.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AlarmTriggeredEventArgs.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Models\\AlarmTriggeredEventArgs.cs",
+              "RelativeDocumentMoniker": "Models\\AlarmTriggeredEventArgs.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\Models\\AlarmTriggeredEventArgs.cs",
+              "RelativeToolTip": "Models\\AlarmTriggeredEventArgs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T06:13:18.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SecSeeTime.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\SecSeeTime.csproj",
+              "RelativeDocumentMoniker": "SecSeeTime.csproj",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\SecSeeTime.csproj",
+              "RelativeToolTip": "SecSeeTime.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-31T23:05:17.974Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
