@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+1OC38QJS8Q=",
+  "dgSpecHash": "fT+FnYlM/2Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\SecSeeTime.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Sec's See Time\\SecSeeTime.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\libvlcsharp\\3.10.1\\libvlcsharp.3.10.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\libvlcsharp.wpf\\3.10.1\\libvlcsharp.wpf.3.10.1.nupkg.sha512",

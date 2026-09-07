@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SecSeeTime")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f81563bc88cc1ca92b290dd5a0e7d3106af0760")]
 [assembly: System.Reflection.AssemblyProductAttribute("SecSeeTime")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SecSeeTime")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

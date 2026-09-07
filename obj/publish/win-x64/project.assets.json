@@ -2276,11 +2276,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\SecSeeTime.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Sec's See Time\\SecSeeTime.csproj",
       "projectName": "SecSeeTime",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\SecSeeTime.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\Sec's See Time\\SecSeeTime.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\SecSeeTime\\obj\\publish\\win-x64\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\Sec's See Time\\obj\\publish\\win-x64\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
