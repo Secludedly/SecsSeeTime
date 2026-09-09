@@ -1,7 +1,5 @@
-# Sec's See Time (Images and formatting to be added later)
-
 <p align="center">
-  <img src="" alt="Sec's See Time logo" width="180">
+  <img src="https://i.imgur.com/t7o8IS7.png" width=500>
 </p>
 
 <h3 align="center">A customizable Windows alarm clock built for people who want more than a basic clock app.</h3>
@@ -11,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="" alt="Sec's See Time main clock screenshot">
+  <img src="https://i.imgur.com/nKCyvBA.png">
 </p>
 
 ---
@@ -69,6 +67,10 @@ Alarms continue to be managed by the background alarm engine while the main wind
 
 ## Alarm Sound System
 
+<p align="center">
+  <img src="https://i.imgur.com/J3jROPR.gif">
+</p>
+
 Sec's See Time includes a built-in sound library as well as support for importing your own audio.
 
 ### Built-in sounds
@@ -95,10 +97,6 @@ Examples include:
 - Gentle Wake
 - Music Box
 - And additional synthesized sounds in the built-in catalog.
-
-<p align="center">
-  <img src="" alt="Sound Library screenshot">
-</p>
 
 ### Supported imported audio
 
@@ -137,13 +135,13 @@ Recordings are saved as WAV files.
 
 Recording supports a maximum take length of **10 minutes**.
 
-<p align="center">
-  <img src="" alt="Audio recording screenshot">
-</p>
-
 ---
 
 ## YouTube Alarm Support
+
+<p align="center">
+  <img src="https://i.imgur.com/hgBCUzY.gif">
+</p>
 
 You can use a YouTube video as an alarm source.
 
@@ -155,14 +153,6 @@ Enter a supported YouTube URL when creating an alarm and Sec's See Time will att
 - YouTube alarm controls are unavailable when the application detects that there is no network connection.
 - YouTube playback is handled through the application's embedded WebView2 player.
 - YouTube URLs are validated and video IDs are extracted before playback.
-
-<p align="center">
-  <img src="" alt="YouTube alarm screenshot">
-</p>
-
-<p align="center">
-  <img src="" alt="YouTube alarm GIF demonstration">
-</p>
 
 ---
 
@@ -242,13 +232,13 @@ Features include:
 - Configurable World Clock typography.
 - Configurable World Clock placement.
 
-<p align="center">
-  <img src="" alt="World Clock screenshot">
-</p>
-
 ---
 
 # Appearance Studio
+
+<p align="center">
+  <img src="https://i.imgur.com/Go4Veye.gif">
+</p>
 
 Sec's See Time is designed to be heavily customizable.
 
@@ -282,10 +272,6 @@ A stripped-down appearance focused almost entirely on the time.
 
 > No glow, no particles. Just the time.
 
-<p align="center">
-  <img src="" alt="Theme selection screenshot">
-</p>
-
 ---
 
 ## Theme Import / Export
@@ -300,17 +286,13 @@ They can then be imported into another installation of Sec's See Time.
 
 This makes it possible to create a custom appearance once and share it with another user.
 
-<p align="center">
-  <img src="" alt="Appearance Studio screenshot">
-</p>
-
-<p align="center">
-  <img src="" alt="Appearance Studio GIF demonstration">
-</p>
-
 ---
 
 # Windows Integration
+
+<p align="center">
+  <img src="https://i.imgur.com/WhlrO0J.gif">
+</p>
 
 Sec's See Time is designed to behave like a normal Windows desktop application even when the main window isn't visible.
 
@@ -330,13 +312,13 @@ The tray menu provides quick access to:
 
 Left-clicking the tray icon returns the clock window.
 
-<p align="center">
-  <img src="" alt="System tray screenshot">
-</p>
-
 ---
 
 # Alarm Screen
+
+<p align="center">
+  <img src="https://i.imgur.com/01trB6g.gif">
+</p>
 
 When an alarm triggers, Sec's See Time presents a dedicated ringing interface.
 
@@ -352,14 +334,6 @@ The alarm screen can show:
 - Stop/dismiss controls.
 - Theme-specific visual effects.
 - YouTube playback when the alarm source is YouTube.
-
-<p align="center">
-  <img src="" alt="Alarm ringing screen screenshot">
-</p>
-
-<p align="center">
-  <img src="" alt="Alarm ringing screen GIF demonstration">
-</p>
 
 ---
 
